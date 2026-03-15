@@ -31,14 +31,18 @@ def analyze_transcript(
     transcript: str,
     api_key: str | None = None,
     llm_model: str | None = None,
+    prompt_template: str | None = None,
 ) -> str:
     """
     Send transcript to an LLM for evaluation. Returns the model's feedback text.
 
     If llm_model is set (e.g. "llama3"), use Ollama locally. Otherwise use OpenAI
-    (requires OPENAI_API_KEY).
+    (requires OPENAI_API_KEY). If prompt_template is provided it must contain {transcript}.
     """
-    prompt = EVALUATION_PROMPT.format(transcript=transcript)
+    if prompt_template and "{transcript}" in prompt_template:
+        prompt = prompt_template.format(transcript=transcript)
+    else:
+        prompt = EVALUATION_PROMPT.format(transcript=transcript)
     messages = [
         {"role": "system", "content": "You are a concise, constructive speaking coach. Reply only with the requested feedback format."},
         {"role": "user", "content": prompt},

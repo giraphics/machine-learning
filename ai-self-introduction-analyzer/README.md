@@ -192,6 +192,15 @@ python run.py path/to/your_intro.mp4 --llm-model llama3
 # or: --llm-model mistral
 ```
 
+**Custom instructions (Ollama):** use a Markdown or text file to define evaluation criteria; the tool builds a prompt, shows it for confirmation, and optionally lets you edit it. The prompt is saved for all future Ollama runs:
+
+```bash
+python run.py path/to/intro.mp4 --llm-model llama3 --instructions path/to/criteria.md
+```
+
+- The generated prompt is shown on the command line. You are asked: **Modify this prompt? (yes/y / no/n)**. If you choose yes, your editor (e.g. `EDITOR` or Notepad on Windows) opens so you can edit the prompt; the result is saved.
+- Saved prompt path: `saved_ollama_prompt.txt` in the project directory. On later runs with `--llm-model`, this file is used automatically (no need to pass `--instructions` again).
+
 **Batch (folder):** process all videos in a folder and write one JSON per video to an output directory:
 
 ```bash
@@ -238,7 +247,8 @@ Feedback:
 
 - **`<stem>.json`** — full result (video, transcript, feedback).
 - **`<stem>.txt`** — plain text (video name, transcript, feedback) for easy copy-paste.
-- **`results.csv`** — one CSV with all videos: columns `video`, `transcript`, `feedback`, `clarity_score`, `fluency_score`, `confidence_score`, `structure_score`, `vocabulary_score`, `suggestion`. Scores are parsed from the feedback; open in Excel or any spreadsheet.
+- **`results.csv`** — one CSV with all videos: columns `video`, `transcript`, `feedback`, score columns, `suggestion`. Scores are parsed from the feedback; open in Excel or any spreadsheet.
+- If the analysis cannot be parsed into the expected format (e.g. custom prompt produced different output), a **`<stem>_feedback_readable.txt`** file is also written with a clear, readable presentation of the transcript and feedback.
 
 Example JSON:
 
