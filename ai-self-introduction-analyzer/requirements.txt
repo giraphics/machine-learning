@@ -1,0 +1,12 @@
+# Audio/video (ffmpeg must be installed on PATH for audio extraction)
+openai-whisper>=20231117
+pydub>=0.25.1
+
+# LLM analysis
+openai>=1.0.0
+
+# Config
+python-dotenv>=1.0.0
+
+# Optional (for future vision/facial cues)
+# opencv-python>=4.8.0
