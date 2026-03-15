@@ -15,8 +15,7 @@ Transcript:
 
 Provide your analysis in this exact format. Be concise and actionable.
 
-Feedback:
-- [2-4 bullet points: structure, pacing, clarity, standout positives]
+Feedback: [Exactly 4 sentences covering structure, pacing, clarity, and standout positives.]
 - Repeated filler words: [list any: "um", "uh", "like", "actually", etc., or "none" if minimal]
 - Clarity score: X/10
 - Fluency score: X/10

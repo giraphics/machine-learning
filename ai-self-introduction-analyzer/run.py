@@ -55,8 +55,7 @@ def _build_prompt_from_instructions(instructions: str) -> str:
 
 Provide your analysis in this exact format so it can be parsed reliably:
 
-Feedback:
-- [2–4 bullet points: structure, pacing, clarity, standout positives]
+Feedback: [Exactly 4 sentences covering structure, pacing, clarity, and standout positives.]
 - Repeated filler words: [list any, e.g. "um", "uh", "like", or "none" if minimal]
 - Clarity score: X/10
 - Fluency score: X/10

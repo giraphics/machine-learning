@@ -235,9 +235,7 @@ large-v3
 Transcript:
 Hello, my name is Parminder Singh...
 
-Feedback:
-- Good introduction structure
-- Slightly fast pacing
+Feedback: Your introduction was clear. Pacing was slightly fast. Filler words were minimal. Confidence came across well.
 - Repeated filler words: "uh", "actually"
 - Confidence score: 7.5/10
 - Suggestion: pause more after key sentences
