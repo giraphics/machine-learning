@@ -1,0 +1,12 @@
+[project]
+name = "ai-self-introduction-analyzer"
+version = "0.1.0"
+description = "Analyze self-introduction videos: extract audio, transcribe with Whisper, get LLM feedback."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openai-whisper>=20231117",
+    "pydub>=0.25.1",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+]
