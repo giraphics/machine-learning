@@ -1,0 +1,21 @@
+{
+  "name": "digipen_module_profile",
+  "description": "Compliance rules for DigiPen/SIT module profile documents (syllabi). Based on CSD3150, CSD3151, CSD2101 sample documents.",
+  "rules": [
+    "The document must include a module code (e.g. CSD3150) and module title.",
+    "The document must state the number of credit units or SIT credits assigned to the module.",
+    "The document must list at least one module lead or coordinator with their email address.",
+    "The document must include a module descriptor or description that summarises what the module covers.",
+    "The document must list at least two numbered learning outcomes using action verbs (e.g. Demonstrate, Implement, Analyse).",
+    "The document must include a detailed assessment breakdown where all weightings sum to 100%.",
+    "The document must state a pass grade requirement (e.g. 'D grade or above to pass').",
+    "The document must include a late submission policy that specifies grade penalties or deadlines.",
+    "The document must include an academic integrity or plagiarism policy.",
+    "The document must state a policy on the use of AI or LLM tools (e.g. ChatGPT, Copilot).",
+    "The document must include disability support or accessibility information with a contact point.",
+    "The document must state the last day or week to withdraw from the module.",
+    "The document must include an attendance policy specifying consequences for absences.",
+    "The document must provide a weekly schedule or list of topics covered across the trimester.",
+    "The document must specify the total study hours or workload breakdown by activity type (e.g. lecture, assignment, self-study)."
+  ]
+}
