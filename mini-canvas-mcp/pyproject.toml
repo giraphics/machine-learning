@@ -1,0 +1,7 @@
+[project]
+name = "mini-canvas-mcp"
+version = "0.1.0"
+description = "A tiny MCP server that gives an AI drawing tools - for teaching how MCP works"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["mcp[cli]>=2.0", "httpx>=0.27"]

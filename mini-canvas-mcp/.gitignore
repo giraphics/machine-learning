@@ -1,0 +1,33 @@
+# Mini Canvas MCP - keep only source; everything below is recreated on each PC.
+
+# Python virtual environment (recreate: python -m venv .venv && pip install -r requirements.txt)
+.venv/
+venv/
+env/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build / packaging output
+build/
+dist/
+*.egg-info/
+
+# Drawings generated at run time (the folder is created automatically)
+output/
+
+# Secrets - API keys belong in environment variables, never in git
+.env
+.env.*
+
+# Editor and OS files
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
